@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-class _TrainTracksTextureRenderObject extends RenderProxyBox {
+class TrainTracksTextureRenderObject extends RenderProxyBox {
   @override
   void paint(PaintingContext context, Offset offset) {
     context.paintChild(child!, offset);
