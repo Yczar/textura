@@ -1,0 +1,191 @@
+import 'package:flutter/rendering.dart';
+import 'package:textura/src/enums/textura_type.dart';
+import 'package:textura/src/textures/fabrics/denim.dart';
+import 'package:textura/src/textures/fabrics/fabric.dart';
+import 'package:textura/src/textures/fabrics/furry.dart';
+import 'package:textura/src/textures/fabrics/linen.dart';
+import 'package:textura/src/textures/fabrics/silk.dart';
+import 'package:textura/src/textures/fabrics/suede.dart';
+import 'package:textura/src/textures/materials/asphalt.dart';
+import 'package:textura/src/textures/materials/brick_wall.dart';
+import 'package:textura/src/textures/materials/concrete.dart';
+import 'package:textura/src/textures/materials/granite.dart';
+import 'package:textura/src/textures/materials/leather.dart';
+import 'package:textura/src/textures/materials/marble.dart';
+import 'package:textura/src/textures/materials/metal_texture.dart';
+import 'package:textura/src/textures/materials/rubber.dart';
+import 'package:textura/src/textures/materials/rusted_metal.dart';
+import 'package:textura/src/textures/materials/steel.dart';
+import 'package:textura/src/textures/materials/wood_grain.dart';
+import 'package:textura/src/textures/miscellaneous/canvas.dart';
+import 'package:textura/src/textures/miscellaneous/dna.dart';
+import 'package:textura/src/textures/miscellaneous/foam.dart';
+import 'package:textura/src/textures/miscellaneous/game_pixels.dart';
+import 'package:textura/src/textures/miscellaneous/graffiti.dart';
+import 'package:textura/src/textures/miscellaneous/graph_paper.dart';
+import 'package:textura/src/textures/miscellaneous/mud.dart';
+import 'package:textura/src/textures/miscellaneous/music_sheet.dart';
+import 'package:textura/src/textures/miscellaneous/newsprint.dart';
+import 'package:textura/src/textures/miscellaneous/paper.dart';
+import 'package:textura/src/textures/miscellaneous/perforated_metal.dart';
+import 'package:textura/src/textures/miscellaneous/roadways.dart';
+import 'package:textura/src/textures/miscellaneous/spider_web.dart';
+import 'package:textura/src/textures/miscellaneous/train_tracks.dart';
+import 'package:textura/src/textures/miscellaneous/water.dart';
+import 'package:textura/src/textures/nature/clouds.dart';
+import 'package:textura/src/textures/nature/constellations.dart';
+import 'package:textura/src/textures/nature/galaxy.dart';
+import 'package:textura/src/textures/nature/grass.dart';
+import 'package:textura/src/textures/nature/leaves.dart';
+import 'package:textura/src/textures/nature/sand.dart';
+import 'package:textura/src/textures/nature/solar_system.dart';
+import 'package:textura/src/textures/nature/stars.dart';
+import 'package:textura/src/textures/nature/sunset.dart';
+import 'package:textura/src/textures/patterns/bubble.dart';
+import 'package:textura/src/textures/patterns/camo.dart';
+import 'package:textura/src/textures/patterns/celtic_knots.dart';
+import 'package:textura/src/textures/patterns/chequered.dart';
+import 'package:textura/src/textures/patterns/chessboard.dart';
+import 'package:textura/src/textures/patterns/city_maps.dart';
+import 'package:textura/src/textures/patterns/greek_keys.dart';
+import 'package:textura/src/textures/patterns/grid.dart';
+import 'package:textura/src/textures/patterns/honeycomb.dart';
+import 'package:textura/src/textures/patterns/leopard.dart';
+import 'package:textura/src/textures/patterns/mosaic.dart';
+import 'package:textura/src/textures/patterns/spirals.dart';
+import 'package:textura/src/textures/patterns/zebra.dart';
+import 'package:textura/src/textures/technology/circuitry.dart';
+import 'package:textura/src/textures/technology/glitch.dart';
+import 'package:textura/src/textures/technology/holographic.dart';
+
+/// Extension on `TextureType` to provide a convenient way to access the
+/// corresponding `RenderBox`.
+/// It maps each texture type to its respective `RenderBox` object, which is
+/// used to draw the texture.
+///
+/// Sample Usage:
+/// ```dart
+/// final renderObject = TextureType.asphalt.renderObject;
+/// ```
+extension TextureTypeExtension on TextureType {
+  /// Gets the `RenderBox` corresponding to the texture type.
+  /// This `RenderBox` is used to draw the texture.
+  RenderBox get renderObject {
+    switch (this) {
+      case TextureType.asphalt:
+        return AsphaltTextureRenderObject();
+      case TextureType.brickWall:
+        return BrickWallTextureRenderObject();
+      case TextureType.bubble:
+        return BubbleTextureRenderObject();
+      case TextureType.camo:
+        return CamoTextureRenderObject();
+      case TextureType.canvas:
+        return CanvasTextureRenderObject();
+      case TextureType.celticKnots:
+        return CelticKnotsTextureRenderObject();
+      case TextureType.chequered:
+        return ChequeredTextureRenderObject();
+      case TextureType.chessboard:
+        return ChessboardTextureRenderObject();
+      case TextureType.circuitry:
+        return CircuitryTextureRenderObject();
+      case TextureType.cityMaps:
+        return CityMapsTextureRenderObject();
+      case TextureType.clouds:
+        return CloudsTextureRenderObject();
+      case TextureType.concrete:
+        return ConcreteTextureRenderObject();
+      case TextureType.constellations:
+        return ConstellationsTextureRenderObject();
+      case TextureType.denim:
+        return DenimTextureRenderObject();
+      case TextureType.dna:
+        return DNATextureRenderObject();
+      case TextureType.fabricTexture:
+        return FabricTextureRenderObject();
+      case TextureType.foam:
+        return FoamTextureRenderObject();
+      case TextureType.furry:
+        return FurryTextureRenderObject();
+      case TextureType.galaxy:
+        return GalaxyTextureRenderObject();
+      case TextureType.gamePixels:
+        return GamePixelsTextureRenderObject();
+      case TextureType.glitch:
+        return GlitchRenderObject();
+      case TextureType.graffiti:
+        return GraffitiTextureRenderObject();
+      case TextureType.granite:
+        return GraniteTextureRenderObject();
+      case TextureType.graphPaper:
+        return GraphPaperTextureRenderObject();
+      case TextureType.grass:
+        return GrassTextureRenderObject();
+      case TextureType.greekKeys:
+        return GreekKeysTextureRenderObject();
+      case TextureType.grid:
+        return GridTextureRenderObject();
+      case TextureType.holographic:
+        return HolographicTextureRenderObject();
+      case TextureType.honeycomb:
+        return HoneycombTextureRenderObject();
+      case TextureType.leather:
+        return LeatherTextureRenderObject();
+      case TextureType.leaves:
+        return LeavesTextureRenderObject();
+      case TextureType.leopard:
+        return LeopardTextureRenderObject();
+      case TextureType.linen:
+        return LinenTextureRenderObject();
+      case TextureType.marble:
+        return MarbleTextureRenderObject();
+      case TextureType.metalTexture:
+        return MetalTextureRenderObject();
+      case TextureType.mosaic:
+        return MosaicTextureRenderObject();
+      case TextureType.mud:
+        return MudTextureRenderObject();
+      case TextureType.musicSheet:
+        return MusicSheetTextureRenderObject();
+      case TextureType.newsprint:
+        return NewsprintTextureRenderObject();
+      case TextureType.paper:
+        return PaperTextureRenderObject();
+      case TextureType.perforatedMetal:
+        return PerforatedMetalTextureRenderObject();
+      case TextureType.roadways:
+        return RoadwaysTextureRenderObject();
+      case TextureType.rubber:
+        return RubberTextureRenderObject();
+      case TextureType.rustedMetal:
+        return RustedMetalTextureRenderObject();
+      case TextureType.sand:
+        return SandTextureRenderObject();
+      case TextureType.silk:
+        return SilkTextureRenderObject();
+      case TextureType.solarSystem:
+        return SolarSystemTextureRenderObject();
+      case TextureType.spiderWeb:
+        return SpiderWebTextureRenderObject();
+      case TextureType.spirals:
+        return SpiralsTextureRenderObject();
+      case TextureType.star:
+        return StarsTextureRenderObject();
+      case TextureType.steel:
+        return SteelTextureRenderObject();
+      case TextureType.suede:
+        return SuedeTextureRenderObject();
+      case TextureType.sunset:
+        return SunsetTextureRenderObject();
+      case TextureType.trainTracks:
+        return TrainTracksTextureRenderObject();
+      case TextureType.water:
+        return WaterTextureRenderObject();
+      case TextureType.woodGrain:
+        return WoodGrainTextureRenderObject();
+      case TextureType.zebra:
+        return ZebraTextureRenderObject();
+    }
+  }
+}
