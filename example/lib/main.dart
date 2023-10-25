@@ -60,19 +60,22 @@ class TextureDisplayScreen extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(title: const Text('Texture Display')),
-      body: Stack(
-        children: [
-          Textura(
-            textureType: textureType,
-            child: SizedBox(height: size.height, width: size.width),
-          ),
-          Center(
-            child: Text(
-              textureType.toString().split('.').last,
-              style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Textura(
+              textureType: textureType,
+              child: SizedBox(height: size.height, width: size.width),
             ),
-          ),
-        ],
+            Center(
+              child: Text(
+                textureType.toString().split('.').last,
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
