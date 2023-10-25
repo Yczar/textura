@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  textura:
+    path: ../
 
 dev_dependencies:
   flutter_test:

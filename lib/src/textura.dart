@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:textura/src/enums/textura_type.dart';
 import 'package:textura/src/extensions/texture_type_extension.dart';
 
@@ -37,5 +38,16 @@ class Textura extends SingleChildRenderObjectWidget {
   @override
   RenderObject createRenderObject(BuildContext context) {
     return textureType.renderObject;
+  }
+
+  /// Updates the RenderObject during the widget update phase.
+  /// It modifies the child of the existing RenderObject to the new RenderObject
+  /// based on the updated [textureType].
+  @override
+  void updateRenderObject(
+    BuildContext context,
+    covariant RenderProxyBox renderObject,
+  ) {
+    renderObject.child = textureType.renderObject;
   }
 }
