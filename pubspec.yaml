@@ -1,7 +1,7 @@
 name: textura
-description: My new Flutter package
+homepage: https://github.com/Yczar/textura
+description: Your friendly Flutter companion that wraps your widgets in a cozy blanket of beautiful textures.
 version: 0.1.0+1
-publish_to: none
 
 environment:
   sdk: ">=3.0.0 <4.0.0"

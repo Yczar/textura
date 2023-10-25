@@ -14,7 +14,7 @@ class SunsetTextureRenderObject extends RenderProxyBox {
     // Painting the gradient sky
     final gradientPaint = Paint()
       ..shader = ui.Gradient.linear(
-        const Offset(0, 0),
+        Offset.zero,
         Offset(0, size.height),
         [
           Colors.deepOrange,

@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class MetalTextureRenderObject extends RenderBox {
   @override
@@ -18,7 +17,7 @@ class MetalTextureRenderObject extends RenderBox {
       colors: [Colors.grey[800]!, Colors.grey[600]!, Colors.grey[800]!],
       stops: const [0.0, 0.5, 1.0],
     ).createShader(
-      Rect.fromPoints(const Offset(0, 0), Offset(size.width, size.height)),
+      Rect.fromPoints(Offset.zero, Offset(size.width, size.height)),
     );
 
     final paint = Paint()
