@@ -23,7 +23,7 @@ class PaperTextureRenderObject extends RenderProxyBox {
       ..color = Colors.grey[300]!.withOpacity(0.5)
       ..strokeWidth = 0.5;
 
-    final random = Random();
+    final random = Random(0);
 
     // Add subtle noise to simulate the grain of the paper
     for (var i = 0; i < 1000; i++) {

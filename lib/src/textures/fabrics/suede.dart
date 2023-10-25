@@ -18,7 +18,7 @@ class SuedeTextureRenderObject extends RenderProxyBox {
     // Fill the canvas with the base color
     context.canvas.drawRect(offset & size, basePaint);
 
-    final random = Random();
+    final random = Random(0);
 
     // Apply a noise pattern to create a napped surface appearance
     final noisePaint = Paint()..strokeWidth = 1;

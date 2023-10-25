@@ -26,7 +26,7 @@ class CircuitryTextureRenderObject extends RenderProxyBox {
       }
     }
 
-    final random = Random();
+    final random = Random(0);
 
     for (var x = 0.0; x < size.width; x += gridSize) {
       for (var y = 0.0; y < size.height; y += gridSize) {

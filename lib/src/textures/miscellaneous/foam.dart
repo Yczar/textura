@@ -21,7 +21,7 @@ class FoamTextureRenderObject extends RenderProxyBox {
     final bubblePaint = Paint()
       ..color = Colors.grey.withOpacity(0.1); // Color of the bubbles
 
-    final random = Random();
+    final random = Random(0);
 
     // Add circles of varying sizes and opacities to simulate bubbles
     for (var i = 0; i < 500; i++) {

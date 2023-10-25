@@ -26,7 +26,7 @@ class GrassTextureRenderObject extends RenderBox
       ..color = Colors.green[600]!
       ..style = PaintingStyle.stroke;
 
-    final random = Random();
+    final random = Random(0);
     const grassBladeCount = 500;
 
     for (var i = 0; i < grassBladeCount; i++) {

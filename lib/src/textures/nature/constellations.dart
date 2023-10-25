@@ -14,7 +14,7 @@ class ConstellationsTextureRenderObject extends RenderProxyBox {
       ..strokeWidth = 1;
 
     const numberOfStars = 100;
-    final random = Random();
+    final random = Random(0);
 
     final starPositions = List<Offset>.generate(numberOfStars, (index) {
       return Offset(

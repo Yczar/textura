@@ -27,7 +27,7 @@ class WoodGrainTextureRenderObject extends RenderBox
       ..color = Colors.brown[800]!
       ..style = PaintingStyle.stroke;
 
-    final random = Random();
+    final random = Random(0);
     for (var i = 0; i < size.width; i += 15) {
       final startX = i.toDouble();
       final startY = random.nextDouble() * size.height;

@@ -22,7 +22,7 @@ class FurryTextureRenderObject extends RenderProxyBox {
       ..color = Colors.brown[500]! // Color of the fur strands
       ..strokeWidth = 2;
 
-    final random = Random();
+    final random = Random(0);
 
     // Draw the fur strands
     for (var i = 0; i < 1000; i++) {

@@ -26,7 +26,7 @@ class ConcreteTextureRenderObject extends RenderBox
       ..color = Colors.grey[600]!
       ..style = PaintingStyle.stroke;
 
-    final random = Random();
+    final random = Random(0);
     const step = 5;
     for (var i = 0; i < size.width; i += step) {
       for (var j = 0; j < size.height; j += step) {

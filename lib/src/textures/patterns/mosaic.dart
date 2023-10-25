@@ -11,7 +11,7 @@ class MosaicTextureRenderObject extends RenderProxyBox {
     context.canvas.save();
     context.canvas.translate(offset.dx, offset.dy);
 
-    final random = Random();
+    final random = Random(0);
     const mosaicTileSize = 20.0;
 
     // Drawing mosaic tiles

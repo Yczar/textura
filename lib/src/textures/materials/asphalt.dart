@@ -21,7 +21,7 @@ class AsphaltTextureRenderObject extends RenderProxyBox {
 
     final grainPaint = Paint()..color = Colors.black.withOpacity(0.05);
 
-    final random = Random();
+    final random = Random(0);
 
     // Add noise to simulate the asphalt texture
     for (var i = 0; i < 1000; i++) {

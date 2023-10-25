@@ -28,7 +28,7 @@ class SteelTextureRenderObject extends RenderBox
       ..style = PaintingStyle.stroke
       ..strokeWidth = 3;
 
-    final random = Random();
+    final random = Random(0);
     const lineCount = 50;
 
     for (var i = 0; i < lineCount; i++) {

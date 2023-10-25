@@ -28,7 +28,7 @@ class MarbleTextureRenderObject extends RenderBox
       ..color = Colors.grey[300]!
       ..strokeWidth = 2;
 
-    final random = Random();
+    final random = Random(0);
     const veinCount = 10;
 
     for (var i = 0; i < veinCount; i++) {

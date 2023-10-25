@@ -20,7 +20,7 @@ class LinenTextureRenderObject extends RenderProxyBox {
     // Fill the canvas with the base color
     context.canvas.drawRect(offset & size, basePaint);
 
-    final random = Random();
+    final random = Random(0);
     final linePaint = Paint()..strokeWidth = 1;
 
     // Draw horizontal lines

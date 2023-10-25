@@ -19,7 +19,7 @@ class MudTextureRenderObject extends RenderProxyBox {
     // Fill the canvas with the base mud color
     context.canvas.drawRect(offset & size, basePaint);
 
-    final random = Random();
+    final random = Random(0);
 
     // Add some irregular spots to simulate the mud texture
     for (var i = 0; i < 300; i++) {

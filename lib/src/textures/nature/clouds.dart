@@ -12,7 +12,7 @@ class CloudsTextureRenderObject extends RenderProxyBox {
     context.canvas.save();
     context.canvas.translate(offset.dx, offset.dy);
 
-    final random = Random();
+    final random = Random(0);
 
     final cloudPaint = Paint()..color = Colors.white.withOpacity(0.8);
 

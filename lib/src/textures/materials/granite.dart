@@ -27,7 +27,7 @@ class GraniteTextureRenderObject extends RenderBox
       ..color = Colors.white.withOpacity(0.3)
       ..style = PaintingStyle.fill;
 
-    final random = Random();
+    final random = Random(0);
     const speckleCount = 1000;
 
     for (var i = 0; i < speckleCount; i++) {

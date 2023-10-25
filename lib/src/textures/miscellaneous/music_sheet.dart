@@ -32,7 +32,7 @@ class MusicSheetTextureRenderObject extends RenderProxyBox {
       ..color = Colors.black
       ..style = PaintingStyle.fill;
 
-    final random = Random();
+    final random = Random(0);
 
     // Drawing random notes on the staff lines
     for (var y = 0.0; y < size.height; y += staffSpacing) {

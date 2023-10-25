@@ -27,7 +27,7 @@ class RubberTextureRenderObject extends RenderBox
       ..color = Colors.black87
       ..style = PaintingStyle.stroke;
 
-    final random = Random();
+    final random = Random(0);
     const noiseCount = 300;
 
     for (var i = 0; i < noiseCount; i++) {

@@ -14,7 +14,7 @@ class GamePixelsTextureRenderObject extends RenderProxyBox {
     final rowCount = (child!.size.width / pixelSize).ceil();
     final columnCount = (child!.size.height / pixelSize).ceil();
 
-    final random = Random();
+    final random = Random(0);
 
     for (var row = 0; row < rowCount; row++) {
       for (var column = 0; column < columnCount; column++) {

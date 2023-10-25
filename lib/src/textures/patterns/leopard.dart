@@ -22,7 +22,7 @@ class LeopardTextureRenderObject extends RenderProxyBox {
       ..color = Colors.brown // Color of the leopard spots
       ..style = PaintingStyle.fill;
 
-    final random = Random();
+    final random = Random(0);
 
     // Draw the leopard spots
     for (var i = 0; i < 150; i++) {

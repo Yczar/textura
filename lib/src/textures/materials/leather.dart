@@ -23,7 +23,7 @@ class LeatherTextureRenderObject extends RenderProxyBox {
       ..color = Colors.black.withOpacity(0.1)
       ..strokeWidth = 1;
 
-    final random = Random();
+    final random = Random(0);
 
     // Add random lines and curves to simulate the grain of the leather
     for (var i = 0; i < 200; i++) {

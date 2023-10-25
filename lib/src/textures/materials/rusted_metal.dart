@@ -27,7 +27,7 @@ class RustedMetalTextureRenderObject extends RenderBox
       ..color = Colors.orange[700]!
       ..style = PaintingStyle.fill;
 
-    final random = Random();
+    final random = Random(0);
     const rustPatchCount = 50;
 
     for (var i = 0; i < rustPatchCount; i++) {

@@ -19,7 +19,7 @@ class StarsTextureRenderObject extends RenderProxyBox {
     // Fill the canvas with the base color of the night sky
     context.canvas.drawRect(offset & size, basePaint);
 
-    final random = Random();
+    final random = Random(0);
 
     // Add stars of various sizes and brightness
     for (var i = 0; i < 200; i++) {

@@ -12,7 +12,7 @@ class GalaxyTextureRenderObject extends RenderProxyBox {
     context.canvas.save();
     context.canvas.translate(offset.dx, offset.dy);
 
-    final random = Random();
+    final random = Random(0);
     final starPaint = Paint()..color = Colors.white;
     final galaxyPaint = Paint()..color = Colors.blue[800]!;
 

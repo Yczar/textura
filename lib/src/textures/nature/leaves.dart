@@ -27,7 +27,7 @@ class LeavesTextureRenderObject extends RenderBox
       ..color = Colors.green[900]!
       ..style = PaintingStyle.stroke;
 
-    final random = Random();
+    final random = Random(0);
     const leafCount = 100;
 
     for (var i = 0; i < leafCount; i++) {
