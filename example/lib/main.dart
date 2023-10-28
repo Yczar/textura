@@ -63,13 +63,18 @@ class TextureDisplayScreen extends StatelessWidget {
           children: [
             Textura(
               textureType: textureType,
-              child: SizedBox(height: size.height, width: size.width),
+              child: SizedBox(
+                height: size.height,
+                width: size.width,
+              ),
             ),
             Center(
               child: Text(
                 textureType.toString().split('.').last,
-                style:
-                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                ),
               ),
             ),
           ],

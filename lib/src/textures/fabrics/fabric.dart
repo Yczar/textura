@@ -1,7 +1,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
-class FabricTextureRenderObject extends RenderBox {
+class FabricTextureRenderObject extends RenderProxyBox {
   @override
   void performLayout() {
     size = constraints.biggest;
