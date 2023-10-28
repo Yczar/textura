@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:textura/src/enums/textura_type.dart';
 import 'package:textura/src/extensions/texture_type_extension.dart';
 
