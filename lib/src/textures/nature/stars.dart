@@ -28,8 +28,8 @@ class StarsTextureRenderObject extends RenderProxyBox {
       final radius = random.nextDouble() * 2; // Varying the star sizes
 
       final starPaint = Paint()
-        ..color = Colors.white.withOpacity(
-          0.5 + random.nextDouble() * 0.5,
+        ..color = Colors.white.withValues(
+          alpha: 0.5 + random.nextDouble() * 0.5,
         ) // Varying the brightness
         ..style = PaintingStyle.fill;
 

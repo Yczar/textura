@@ -24,7 +24,7 @@ class SteelTextureRenderObject extends RenderBox
 
     // Adding brushed lines for texture
     final linePaint = Paint()
-      ..color = Colors.white.withOpacity(0.1)
+      ..color = Colors.white.withValues(alpha: 0.1)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 3;
 

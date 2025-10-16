@@ -28,7 +28,7 @@ class SuedeTextureRenderObject extends RenderProxyBox {
       final y = random.nextDouble() * size.height;
       final opacity = random.nextDouble() * 0.5;
 
-      noisePaint.color = Colors.brown.withOpacity(opacity);
+      noisePaint.color = Colors.brown.withValues(alpha: opacity);
 
       // Using drawCircle to simulate a point
       context.canvas.drawCircle(Offset(x, y), 1, noisePaint);

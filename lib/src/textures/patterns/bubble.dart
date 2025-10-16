@@ -22,7 +22,7 @@ class BubbleTextureRenderObject extends RenderProxyBox {
       final bubbleOpacity = random.nextDouble();
 
       final bubblePaint = Paint()
-        ..color = Colors.blue.withOpacity(bubbleOpacity)
+        ..color = Colors.blue.withValues(alpha: bubbleOpacity)
         ..style = PaintingStyle.fill;
 
       context.canvas.drawCircle(

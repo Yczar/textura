@@ -14,7 +14,7 @@ class CloudsTextureRenderObject extends RenderProxyBox {
 
     final random = Random(0);
 
-    final cloudPaint = Paint()..color = Colors.white.withOpacity(0.8);
+    final cloudPaint = Paint()..color = Colors.white.withValues(alpha: 0.8);
 
     // Drawing clouds
     for (var i = 0; i < 30; i++) {

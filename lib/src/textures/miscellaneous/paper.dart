@@ -20,7 +20,7 @@ class PaperTextureRenderObject extends RenderProxyBox {
     context.canvas.drawRect(offset & size, paint);
 
     final grainPaint = Paint()
-      ..color = Colors.grey[300]!.withOpacity(0.5)
+      ..color = Colors.grey[300]!.withValues(alpha: 0.5)
       ..strokeWidth = 0.5;
 
     final random = Random(0);

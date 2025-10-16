@@ -19,7 +19,7 @@ class FoamTextureRenderObject extends RenderProxyBox {
     context.canvas.drawRect(offset & size, basePaint);
 
     final bubblePaint = Paint()
-      ..color = Colors.grey.withOpacity(0.1); // Color of the bubbles
+      ..color = Colors.grey.withValues(alpha: 0.1); // Color of the bubbles
 
     final random = Random(0);
 

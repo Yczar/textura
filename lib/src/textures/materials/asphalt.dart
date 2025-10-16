@@ -19,7 +19,7 @@ class AsphaltTextureRenderObject extends RenderProxyBox {
     // Fill the canvas with the base color
     context.canvas.drawRect(offset & size, basePaint);
 
-    final grainPaint = Paint()..color = Colors.black.withOpacity(0.05);
+    final grainPaint = Paint()..color = Colors.black.withValues(alpha: 0.05);
 
     final random = Random(0);
 

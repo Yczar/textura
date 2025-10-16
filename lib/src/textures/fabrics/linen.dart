@@ -25,13 +25,15 @@ class LinenTextureRenderObject extends RenderProxyBox {
 
     // Draw horizontal lines
     for (var y = 0.0; y <= size.height; y += 5) {
-      linePaint.color = beige.withOpacity(0.5 + random.nextDouble() * 0.5);
+      linePaint.color =
+          beige.withValues(alpha: 0.5 + random.nextDouble() * 0.5);
       context.canvas.drawLine(Offset(0, y), Offset(size.width, y), linePaint);
     }
 
     // Draw vertical lines
     for (var x = 0.0; x <= size.width; x += 5) {
-      linePaint.color = beige.withOpacity(0.5 + random.nextDouble() * 0.5);
+      linePaint.color =
+          beige.withValues(alpha: 0.5 + random.nextDouble() * 0.5);
       context.canvas.drawLine(Offset(x, 0), Offset(x, size.height), linePaint);
     }
 
