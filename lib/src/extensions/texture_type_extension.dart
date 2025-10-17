@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:textura/src/enums/textura_type.dart';
 import 'package:textura/src/textures/fabrics/denim.dart';
@@ -129,7 +130,13 @@ extension TextureTypeExtension on TextureType {
       case TextureType.holographic:
         return HolographicTextureRenderObject();
       case TextureType.honeycomb:
-        return HoneycombTextureRenderObject();
+        return RenderHoneycomb(
+          hexSize: 30,
+          strokeColor: Colors.yellow,
+          strokeWidth: 5,
+          fillColor: Colors.red,
+          useRandomColors: false,
+        );
       case TextureType.leather:
         return LeatherTextureRenderObject();
       case TextureType.leaves:
