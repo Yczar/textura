@@ -9,7 +9,7 @@ class DNATextureRenderObject extends RenderProxyBox {
 
     final canvas = context.canvas;
     final paint = Paint()
-      ..color = Colors.blue.withOpacity(0.5)
+      ..color = Colors.blue.withValues(alpha: 0.5)
       ..style = PaintingStyle.stroke;
 
     final dnaWidth = child!.size.width / 10;

@@ -14,11 +14,11 @@ class HolographicTextureRenderObject extends RenderProxyBox {
     final paint = Paint()
       ..shader = LinearGradient(
         colors: [
-          Colors.purple.withOpacity(0.5),
-          Colors.blue.withOpacity(0.5),
-          Colors.green.withOpacity(0.5),
-          Colors.yellow.withOpacity(0.5),
-          Colors.red.withOpacity(0.5),
+          Colors.purple.withValues(alpha: 0.5),
+          Colors.blue.withValues(alpha: 0.5),
+          Colors.green.withValues(alpha: 0.5),
+          Colors.yellow.withValues(alpha: 0.5),
+          Colors.red.withValues(alpha: 0.5),
         ],
       ).createShader(Offset.zero & size);
 

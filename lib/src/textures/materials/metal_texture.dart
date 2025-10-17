@@ -28,7 +28,7 @@ class MetalTextureRenderObject extends RenderBox {
 
     // Adding noise for texture
     final random = Random(0);
-    final noisePaint = Paint()..color = Colors.white.withOpacity(0.05);
+    final noisePaint = Paint()..color = Colors.white.withValues(alpha: 0.05);
 
     for (var i = 0; i < 500; i++) {
       final x = random.nextDouble() * size.width;

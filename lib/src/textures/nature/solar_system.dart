@@ -13,7 +13,7 @@ class SolarSystemTextureRenderObject extends RenderProxyBox {
     final canvas = context.canvas;
 
     final sunPaint = Paint()..color = Colors.orangeAccent;
-    final orbitPaint = Paint()..color = Colors.white.withOpacity(0.5);
+    final orbitPaint = Paint()..color = Colors.white.withValues(alpha: 0.5);
     final planetPaint = Paint()..color = Colors.blueAccent;
 
     final sunPosition = Offset(child!.size.width / 2, child!.size.height / 2);

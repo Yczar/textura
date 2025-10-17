@@ -3,7 +3,7 @@ import 'package:flutter/rendering.dart';
 
 class GridTextureRenderObject extends RenderProxyBox {
   final Paint _gridPaint = Paint()
-    ..color = Colors.grey.withOpacity(0.5)
+    ..color = Colors.grey.withValues(alpha: 0.5)
     ..style = PaintingStyle.stroke;
 
   @override

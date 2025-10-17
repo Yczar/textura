@@ -24,7 +24,7 @@ class GraniteTextureRenderObject extends RenderBox
 
     // Adding speckled pattern for texture
     final specklePaint = Paint()
-      ..color = Colors.white.withOpacity(0.3)
+      ..color = Colors.white.withValues(alpha: 0.3)
       ..style = PaintingStyle.fill;
 
     final random = Random(0);

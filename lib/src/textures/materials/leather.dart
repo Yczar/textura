@@ -20,7 +20,7 @@ class LeatherTextureRenderObject extends RenderProxyBox {
     context.canvas.drawRect(offset & size, paint);
 
     final grainPaint = Paint()
-      ..color = Colors.black.withOpacity(0.1)
+      ..color = Colors.black.withValues(alpha: 0.1)
       ..strokeWidth = 1;
 
     final random = Random(0);

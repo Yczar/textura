@@ -61,13 +61,20 @@ class TextureDisplayScreen extends StatelessWidget {
       body: SafeArea(
         child: Stack(
           children: [
-            Textura(
-              textureType: textureType,
-              child: SizedBox(
-                height: size.height,
-                width: size.width,
-              ),
-            ),
+            textureType == TextureType.honeycomb
+                ? const Textura.honeycomb(
+                    hexSize: 20,
+                    strokeColor: Colors.black,
+                    strokeWidth: 2,
+                    fillColor: Colors.green,
+                  )
+                : Textura(
+                    textureType: textureType,
+                    child: SizedBox(
+                      height: size.height,
+                      width: size.width,
+                    ),
+                  ),
             Center(
               child: Text(
                 textureType.toString().split('.').last,
