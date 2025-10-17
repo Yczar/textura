@@ -66,7 +66,7 @@ class Textura extends SingleChildRenderObjectWidget {
     // Pass parameters to honeycomb render object
     if (textureType == TextureType.honeycomb) {
       return RenderHoneycomb(
-        hexSize: _hexSize ?? 40.0,
+        hexSize: _hexSize ?? 20.0,
         strokeColor: _strokeColor ?? Colors.amber,
         fillColor: _fillColor ?? const Color(0x1AFFB300),
         strokeWidth: _strokeWidth ?? 2.0,
