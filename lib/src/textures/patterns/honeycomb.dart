@@ -66,7 +66,7 @@ class RenderHoneycomb extends RenderBox
 
     // If there's a child, lay it out
     if (child != null) {
-      child!.layout(constraints, parentUsesSize: false);
+      child!.layout(constraints);
     }
   }
 

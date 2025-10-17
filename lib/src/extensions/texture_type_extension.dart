@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:textura/src/enums/textura_type.dart';
 import 'package:textura/src/textures/fabrics/denim.dart';
 import 'package:textura/src/textures/fabrics/fabric.dart';
